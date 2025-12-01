@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowCash ID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>FlowCash ID – Catatan Kas</h1>
+
+    <div class="form-box">
+        <input id="keterangan" type="text" placeholder="Keterangan">
+        <input id="jumlah" type="number" placeholder="Jumlah">
+        <select id="tipe">
+            <option value="masuk">Kas Masuk</option>
+            <option value="keluar">Kas Keluar</option>
+        </select>
+        <button onclick="tambahTransaksi()">Tambah</button>
+    </div>
+
+    <h2>Riwayat Transaksi</h2>
+    <table id="tabel">
+        <thead>
+            <tr>
+                <th>Keterangan</th>
+                <th>Jumlah</th>
+                <th>Tipe</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
